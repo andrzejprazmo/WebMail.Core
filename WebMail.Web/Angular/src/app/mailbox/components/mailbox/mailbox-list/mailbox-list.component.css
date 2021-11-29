@@ -1,0 +1,43 @@
+
+
+.mail-item-container {
+  position: relative;
+}
+
+.unseen {
+  background-color: #ffffd9;
+  font-weight: bold;
+}
+
+.mail-item-container::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.mail-item-container .mail-item {
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+  .mail-item-container .mail-item .sender {
+  }
+
+  .mail-item-container .mail-item .send-date {
+    text-align: right;
+    font-size: 13px;
+    color: #999999;
+    font-weight: normal;
+  }
+
+.mail-item-container .mail-item-flags {
+}
+
+  .mail-item-container .mail-item-flags .mail-item-urgent {
+    font-weight: normal;
+    color: #ff0000;
+  }
+
+  .mail-item-container .mail-item-flags .mail-item-attachement {
+    text-align: right;
+  }

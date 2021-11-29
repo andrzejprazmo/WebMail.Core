@@ -1,0 +1,12 @@
+<div *ngIf="mailBody" class="d-flex flex-column">
+  <div class="message-header">
+
+  </div>
+  <div class="message-body flex-fill">
+    <div style="height:75vh;overflow:auto;" [innerHTML]="mailBody.content"></div>
+  </div>
+</div>
+<div *ngIf="!mailBody" class="d-flex flex-column justify-content-center align-items-center empty-state">
+  <p>Wybierz wiadomość</p>
+</div>
+

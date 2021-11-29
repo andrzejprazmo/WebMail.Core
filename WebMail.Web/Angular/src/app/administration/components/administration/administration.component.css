@@ -1,0 +1,13 @@
+
+.div1 {
+  background-color: yellow;
+}
+
+.div2 {
+  background-color: darkorange;
+}
+
+.div3 {
+  background-color: orange;
+  flex-grow: 1;
+}

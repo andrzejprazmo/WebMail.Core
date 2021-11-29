@@ -1,0 +1,20 @@
+<ul class="list-group">
+  <li class="list-group-item" [class.unseen]="!mail.seen" *ngFor="let mail of items">
+    <div class="d-flex flex-row mail-item-container">
+      <div class="flex-shrink-1"><input type="checkbox" /></div>
+      <div class="mail-item flex-fill" (click)="onItemSelected(mail)">
+        <div class="row">
+          <div class="col sender">{{ mail.sender }}</div>
+          <div class="col send-date">{{ mail.date | date:'yyyy-MM-dd hh:mm' }}</div>
+        </div>
+        <div class="row">
+          <div class="col">{{ mail.subject }}</div>
+        </div>
+      </div>
+      <div class="mail-item-flags flex-shrink-1 d-flex align-items-end flex-column">
+        <div *ngIf="mail.flagged" class="mail-item-urgent" [class.flagged]="mail.flagged"><i class="fas fa-flag"></i></div>
+        <div *ngIf="mail.hasAttachments" class="mail-item-attachement"><i class="fas fa-paperclip"></i></div>
+      </div>
+    </div>
+  </li>
+</ul>

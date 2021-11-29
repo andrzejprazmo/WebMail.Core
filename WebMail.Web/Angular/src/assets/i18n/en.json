@@ -1,0 +1,21 @@
+{
+  "login": {
+    "title": "Login to Web Mail...",
+    "userEmail": "Email address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "submit": "Sign in",
+    "validationErrors": {
+      "emailRequired": "Enter your email address",
+      "passwordRequired": "Enter your mailbox password",
+      "badEmailFormat": "Email address is not valid"
+    }
+  },
+  "errorCodes": {
+    "ERROR_100": "Application error. Please, contact your administrator",
+    "ERROR_101": "This email address is not registered",
+    "ERROR_102": "Bad email address or password",
+    "ERROR_103": "Cannot connect to mail server. Bad SSL certificate"
+  }
+
+}

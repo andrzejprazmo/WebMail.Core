@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A129018-C699-4CCD-92B0-5C1044622EAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6533773E-6C4E-401A-9696-D221EFE153E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMail.Infrastructure", "WebMail.Infrastructure\WebMail.Infrastructure.csproj", "{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMail.Domain", "WebMail.Domain\WebMail.Domain.csproj", "{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMail.Application", "WebMail.Application\WebMail.Application.csproj", "{042052F1-93F7-4C5C-B7E6-7075BC8F87BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMail.Web", "WebMail.Web\WebMail.Web.csproj", "{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMail.Application.UnitTest", "WebMail.Application.UnitTest\WebMail.Application.UnitTest.csproj", "{7C7EE413-34B7-4181-808F-FFA4380040D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042052F1-93F7-4C5C-B7E6-7075BC8F87BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042052F1-93F7-4C5C-B7E6-7075BC8F87BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042052F1-93F7-4C5C-B7E6-7075BC8F87BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042052F1-93F7-4C5C-B7E6-7075BC8F87BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7EE413-34B7-4181-808F-FFA4380040D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7EE413-34B7-4181-808F-FFA4380040D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7EE413-34B7-4181-808F-FFA4380040D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7EE413-34B7-4181-808F-FFA4380040D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42C1E0EC-3046-4BEE-8F3B-CD7A85E24FFC} = {1A129018-C699-4CCD-92B0-5C1044622EAD}
+		{C8BF008E-1BDB-47E3-BBE8-7867FCC570E1} = {1A129018-C699-4CCD-92B0-5C1044622EAD}
+		{042052F1-93F7-4C5C-B7E6-7075BC8F87BB} = {1A129018-C699-4CCD-92B0-5C1044622EAD}
+		{04EDDAE1-2C47-49C3-8550-C5DE65BB62BC} = {1A129018-C699-4CCD-92B0-5C1044622EAD}
+		{7C7EE413-34B7-4181-808F-FFA4380040D4} = {6533773E-6C4E-401A-9696-D221EFE153E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FCDEAB9-8BC8-499F-8C87-E80E922B3506}
+	EndGlobalSection
+EndGlobal

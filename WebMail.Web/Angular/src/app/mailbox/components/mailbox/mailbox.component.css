@@ -1,0 +1,4 @@
+.mail-item-list {
+  overflow-y: auto;
+  height: 75vh;
+}
