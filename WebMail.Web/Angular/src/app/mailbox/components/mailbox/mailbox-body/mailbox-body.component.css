@@ -1,3 +1,27 @@
 .empty-state {
   height: 75vh;
 }
+
+.mail-body {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+  .mail-body .message-header {
+    border-bottom: 1px solid #ced4da;
+    background-color: #e3e3e3;
+  }
+
+    .mail-body .message-header .message-subject {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .mail-body .message-header .message-attachements {
+      border-top: 1px solid #ced4da;
+    }
+
+  .mail-body .message-body {
+    padding: 4px 0;
+    height: 75vh;
+    overflow: auto;
+  }

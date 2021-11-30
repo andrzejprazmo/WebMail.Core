@@ -16,6 +16,22 @@
     "ERROR_101": "Ten adres email nie został zarejestrowany",
     "ERROR_102": "Niewłasciwy adres email, bądź hasło",
     "ERROR_103": "Nie można połączyć się z serwerem. Niewłaściwy certyfikat SSL"
+  },
+  "mailbox": {
+    "searchPlaceholder": "Wyszukaj...",
+    "emptyState": "Wybierz wiadomość z listy, aby wyświetlić jej treść",
+    "newMessage": "Nowa wiadomość",
+    "replyTo": "Odpowiedz",
+    "replyAll": "Odpowiedz wszystkim",
+    "folders": {
+      "INBOX": "Skrzynka odbiorcza"
+    },
+    "body": {
+      "from": "Nadawca",
+      "to": "Do",
+      "sent": "Wysłano",
+      "attachements": "Załączniki"
+    }
   }
 
 }

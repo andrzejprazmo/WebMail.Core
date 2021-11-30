@@ -4,7 +4,7 @@
       <div class="flex-shrink-1"><input type="checkbox" /></div>
       <div class="mail-item flex-fill" (click)="onItemSelected(mail)">
         <div class="row">
-          <div class="col sender">{{ mail.sender }}</div>
+          <div class="col sender">{{ mail.senders | mailSender : 'n' }}</div>
           <div class="col send-date">{{ mail.date | date:'yyyy-MM-dd hh:mm' }}</div>
         </div>
         <div class="row">

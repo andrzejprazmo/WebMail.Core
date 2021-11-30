@@ -3,15 +3,15 @@
   <div class="flex-grow-1 d-flex d-flex-row">
     <div class="card col-4 me-2">
       <div class="card-body d-flex flex-column">
-        <div><app-mailbox-folders [folders]="folderList" (onFolderChange)="onFolderChange($event)"></app-mailbox-folders></div>
+        <div><app-mailbox-folders #folderListComponent [folders]="folderList" (onFolderChange)="onFolderChange($event)"></app-mailbox-folders></div>
         <div><app-mailbox-list-toolbar></app-mailbox-list-toolbar></div>
         <div class="flex-grow-1 mail-item-list"><app-mailbox-list [items]="mailItemList" (onMailSelected)="onMailSelected($event)"></app-mailbox-list></div>
       </div>
     </div>
     <div class="card col flex-grow-1">
       <div class="card-body d-flex flex-column">
-        <div class="flex-shrink-1"><app-mailbox-toolbar></app-mailbox-toolbar></div>
-        <div class="flex-fill"><app-mailbox-body [mailBody]="currentMailBody"></app-mailbox-body></div>
+        <!--<div class="flex-shrink-1"><app-mailbox-toolbar></app-mailbox-toolbar></div>-->
+        <div class="flex-fill"><app-mailbox-body #mailBodyComponent [mailBody]="currentMailBody"></app-mailbox-body></div>
       </div>
     </div>
   </div>

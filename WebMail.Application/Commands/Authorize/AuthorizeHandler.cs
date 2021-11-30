@@ -38,7 +38,7 @@ namespace WebMail.Application.Commands.Authorize
             {
                 if (EmailValidator.IsValidEmail(request.EmailAddress))
                 {
-                    var userEmail = new MailAddress(request.EmailAddress);
+                    var userEmail = new System.Net.Mail.MailAddress(request.EmailAddress);
                     var mailbox = await databaseRepository.FindMailboxByName(userEmail.Host);
                     if (mailbox != null)
                     {

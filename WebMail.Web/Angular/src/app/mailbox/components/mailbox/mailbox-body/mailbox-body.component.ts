@@ -7,11 +7,12 @@ import { MailBodyContract } from '@mailbox/models/mailbox.models';
   styleUrls: ['./mailbox-body.component.css']
 })
 export class MailboxBodyComponent implements OnInit {
-  @Input() mailBody!: MailBodyContract;
+  @Input() mailBody!: MailBodyContract | null;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

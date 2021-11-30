@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebMail.Domain.Entities
 {
-    public class MailBody : MailHeader
+    public class MailAddress
     {
-        public string Content { get; set; }
-        public MailAddress[] Recipients { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
     }
 }

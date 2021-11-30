@@ -32,7 +32,8 @@ namespace WebMail.Application.Queries.GetMailBody
                 Index = mailBody.Index,
                 Seen = mailBody.Seen,
                 Subject = mailBody.Subject,
-                Sender = mailBody.Sender,
+                Senders = mailBody.Senders,
+                Recipients = mailBody.Recipients,
             };
         }
     }

@@ -2,7 +2,7 @@
   <div class="col">
     <form [formGroup]="foldersForm">
       <select class="form-select" formControlName="folderName">
-        <option *ngFor="let folder of folders" [ngValue]="folder.folderName">{{ folder.folderName }}</option>
+        <option *ngFor="let folder of folders" [ngValue]="folder.folderName">{{ folder.displayName }}</option>
       </select>
     </form>
   </div>

@@ -9,7 +9,7 @@ namespace WebMail.Domain.Entities
     public class MailHeader
     {
         public int Index { get; set; }
-        public string Sender { get; set; }
+        public MailAddress[] Senders { get; set; }
         public string Subject { get; set; }
         public DateTime Date { get; set; }
         public bool HasAttachments { get; set; }

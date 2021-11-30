@@ -21,25 +21,47 @@ namespace WebMail.Infrastructure.Mailkit.Mappers
                 HasAttachments = message.BodyParts.Any(bp => bp.ContentType.MediaType == "application"),
                 Seen = message.Flags?.HasFlag(MessageFlags.Seen) ?? false,
                 Flagged = message.Flags?.HasFlag(MessageFlags.Flagged) ?? false,
-                Sender = GetSender(message.Envelope),
+                Senders = MapMailAddresses(message.Envelope.Sender),
             };
         }
 
-        private static string GetSender(Envelope envelope)
+        public static MailBody MapBody(int index, MimeMessage body)
         {
-            if (envelope.Sender.Any())
+            return new MailBody
             {
-                var sender = envelope.Sender.First() as MailboxAddress;
-                if (sender != null)
+                Index = index,
+                Content = body.HtmlBody,
+                Date = body.Date.Date,
+                Subject = body.Subject,
+                HasAttachments = body.Attachments.Any(),
+                Senders = MapMailAddresses(body.From),
+                Recipients = MapMailAddresses(body.To),
+            };
+        }
+
+        private static MailAddress MapMailAddress(InternetAddress address)
+        {
+            if (address is MailboxAddress)
+            {
+                return new MailAddress
                 {
-                    if (!string.IsNullOrWhiteSpace(sender.Name))
-                    {
-                        return sender.Name;
-                    }
-                    return sender.Address;
-                }
+                    Name = address.Name,
+                    Address = ((MailboxAddress)address).Address
+                };
             }
-            return string.Empty;
+            return new MailAddress
+            {
+                Name = address.Name,
+            };
+        }
+
+        private static MailAddress[] MapMailAddresses(InternetAddressList senders)
+        {
+            if (senders != null && senders.Any())
+            {
+                return senders.Select(s => MapMailAddress(s)).ToArray();
+            }
+            return Array.Empty<MailAddress>();
         }
     }
 }

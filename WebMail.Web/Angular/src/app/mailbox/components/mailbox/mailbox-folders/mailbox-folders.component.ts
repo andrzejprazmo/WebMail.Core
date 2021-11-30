@@ -22,4 +22,8 @@ export class MailboxFoldersComponent implements OnInit {
     });
   }
 
+  selectInboxFolder() {
+    this.foldersForm.get('folderName')?.setValue('INBOX');
+  }
+
 }

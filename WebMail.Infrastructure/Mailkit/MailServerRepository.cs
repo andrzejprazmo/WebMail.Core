@@ -89,14 +89,7 @@ namespace WebMail.Infrastructure.Mailkit
                     var mailBody = await folder.GetMessageAsync(mailIndex);
                     if (mailBody != null)
                     {
-                        return new MailBody
-                        {
-                            Index = mailIndex,
-                            Content = mailBody.HtmlBody,
-                            Date = mailBody.Date.Date,
-                            Subject = mailBody.Subject,
-                            HasAttachments = mailBody.Attachments.Any(),
-                        };
+                        return MailMapper.MapBody(mailIndex, mailBody);
                     }
                     await folder.CloseAsync();
                 }

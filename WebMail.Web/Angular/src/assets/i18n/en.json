@@ -16,6 +16,22 @@
     "ERROR_101": "This email address is not registered",
     "ERROR_102": "Bad email address or password",
     "ERROR_103": "Cannot connect to mail server. Bad SSL certificate"
+  },
+  "mailbox": {
+    "searchPlaceholder": "Enter search string...",
+    "emptyState": "Select message from the list to display the body",
+    "newMessage": "New message",
+    "replyTo": "Reply",
+    "replyAll": "Reply all",
+    "folders": {
+      "INBOX": "Inbox"
+    },
+    "body": {
+      "from": "From",
+      "to": "To",
+      "sent": "Sent",
+      "attachements": "Attachements"
+    }
   }
 
 }
