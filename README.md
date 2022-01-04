@@ -1,0 +1,2 @@
+# WebMail.Core
+WebMail client
